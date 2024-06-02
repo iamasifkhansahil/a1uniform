@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="website icon" type="png" href="Assets/Logos/Untitled-1__1_-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>A-1 Uniforms</title>
+</head>
+
+<body>
+
+    <!-- preloader starts -->
+    <div class="preloader" id="preloader">
+        <div class="circle">
+            <div class="scircle">
+            </div>
+        </div>
+    </div>
+    <!-- preloader ends -->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bgnav navbar-light p-0 ">
+            <img src="Assets/Logos/Untitled-1__1_-removebg-preview.png" alt="" height="65px" width="75px" class="ms-4">
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="Home.html" class="nav-item nav-link navlink active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle navlink" data-bs-toggle="dropdown">Categories</a>
+                    <div class="dropdown-menu fade-up m-0" id="dropdown">
+                    </div>
+                </div>
+                <a href="About us.html" class="nav-item nav-link navlink">About Us</a>
+                <a href="Contact.html" class="nav-item nav-link navlink">Contact Us</a>
+            </div>
+            <form class="d-flex ms-5">
+                <input class="form-control me-2" type="search" placeholder="Search in A-1 Uniforms" aria-label="Search">
+                <button class="btn btn-outline-success me-3 mybtn" type="submit"><a href=""
+                        class="as">Search</a></button>
+            </form>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- slider strat -->
+    <div id="carouselExampleFade" class="carousel slide myslider carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active data-bs-interval">
+                <img src="Assets/Image/people-working-as-team-company.jpg" class="d-block w-100" alt="..." height="600">
+                <div class="carousel-caption">
+                    <h1>Get <span class="span3">30%</span> Discount</h1>
+                    <p class="p1">We are giving 30% discount to our Customers</p>
+                    <button class="button2"><a href="#trending" class="a1">Tap to view</a></button>
+                </div>
+            </div>
+            <div class="carousel-item data-bs-interval">
+                <img src="Assets/Image/241357046-4470296766366826-2559070877502396050-n_orig.jpg" class="d-block w-100"
+                    alt="..." height="600">
+                <div class="carousel-caption">
+                    <h1>Get <span class="span3">30%</span> Discount</h1>
+                    <p class="p1">We are giving 30% discount to our Customers</p>
+                    <button class="button2"><a href="#trending" class="a1">Tap to view</a></button>
+                </div>
+            </div>
+            <div class="carousel-item data-bs-interval">
+                <img src="Assets/Image/Screenshot (21).png" class="d-block w-100" alt="..." height="600">
+                <div class="carousel-caption">
+                    <h1>Get <span class="span3">30%</span> Discount</h1>
+                    <p class="p1">We are giving 30% discount to our Customers</p>
+                    <button class="button2"><a href="#trending" class="a1">Tap to view</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon click1" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon  click1" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- slider end -->
+
+
+
+    <!-- filter strat -->
+    <div class="container" id="trending" data-aos="fade-up">
+        <div class="row">
+            <div class="con text-center my-4">
+                <h1 class="fs-2">Trending <span class="q3">Poducts</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pt-3 d-flex justify-content-center" data-aos="fade-up">
+        <div class="container">
+            <div class="row justify-content-center mb-3 mt-3" id="filters"></div>
+            <center>
+                <div class="row gy-3 gy-3" id="card"></div>
+            </center>
+        </div>
+    </div>
+    <!-- filter end -->
+    <!-- Feedback start -->
+    <h1 class="clients" data-aos="fade-up">What our&nbsp;<span class="q3">clients</span>&nbsp;says</h1>
+    <button><a href="#"></a></button>
+    <div class="wrapper" data-aos="fade-up">
+        <button id="prev">&lt;</button>
+        <div class="testimonial-container" id="testimonial-container"></div>
+        <button id="next">&gt;</button>
+    </div>
+    <div class="container py-2 mt-3" data-aos="fade-up">
+        <div class="row d-flex flex-row align-items-center justify-content-between">
+
+            <div class="text-center col-lg-6 col-md-12 col-sm-12 ">
+                <h1 class="q2">What's your <span class="q3">Experience?</span></h1>
+                <p class="q4">Give us your Feedback</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <button class="button5"><a href="Feedback.html" class="a5">Feedback</a></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Feedback end -->
+    <!-- About start -->
+
+    <div class="about-sec mt-3" data-aos="fade-up">
+        <div class="container">
+            <h1 class="pt-5">About US</h1>
+            <div class="row myabout">
+                <div class="col-lg-4 col-md-6 col-sm-7 d-flex align-items-center">
+                    <img src="Assets/Logos/Untitled-1__1_-removebg-preview.png" width="300" class="mb-5">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 about-content mb-5">
+                    <h1>A1-Uniforms</h1>
+                    <p>A-1 Uniforms is Pakistan Online Uniform Platform, where you can now place orders
+                        from the comfort
+                        of your home, with an option to customize as per your fit.
+                    </p>
+                    <div>
+                        <button class="button4 me-5"><a href="About us.html" class="a4">More About Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About end -->
+
+    <!-- Question strat -->
+
+    <div class="container py-2" data-aos="fade-up">
+        <div class="row d-flex flex-row align-items-center justify-content-between">
+
+            <div class="text-center col-lg-6 col-md-12 col-sm-12 ">
+                <h1 class="q2">Have any <span class="q3">Question?</span></h1>
+                <p class="q4">If you have any Question you can Contact us.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center ">
+                <button class="button5"><a href="Contact.html" class="a5">Contact Us</a></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Question end -->
+    <!-- footer start -->
+    <footer class="text-white text-center text-lg-start my-footer">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">About company</h5>
+
+                    <p>
+                        A-1 Uniforms is dedicated to cater the Uniform needs across the country. We aim to redefine the
+                        traditional monotony, offering the elements of quality, comfort and convenience at your
+                        doorstep.
+
+                    </p>
+
+                    <p>
+                        Our Core Values are Quality, Comfort and Convenience. you to trust every time you place an
+                        order.
+                    </p>
+
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-primary mybtn btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-primary mybtn btn-lg"><i
+                                class="fab fa-dribbble"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-primary mybtn btn-lg"><i
+                                class="fab fa-twitter"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-primary mybtn btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a>
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" placeholder="Search" id="formControlLg"
+                            class="form-control form-control-lg" />
+                        <!-- <label class="form-label" for="formControlLg">Search</label> -->
+                    </div>
+
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Old Muzaffarabad
+                                Colony</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                class="ms-2">a1uniforms@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span
+                                class="ms-2">+913132634370</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-print"></i></span><span
+                                class="ms-2">+923073878114</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Mon - Thu:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Fri - Sat:</td>
+                                <td>8am - 1am</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>9am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">A-1 Uniforms.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer end -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/product.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/preloader.js">
+
+</script>
+
+</html>

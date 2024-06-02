@@ -1,0 +1,689 @@
+@font-face {
+  font-family: "myfonts";
+  src: url(../Assets/Fonts/Vollkorn-Italic-VariableFont_wght.ttf);
+}
+
+p {
+  font-family: "myfonts";
+}
+
+h5 {
+  font-family: "myfonts";
+}
+
+div {
+  font-family: "myfonts";
+}
+
+a {
+  font-family: "myfonts";
+}
+
+td {
+  font-family: "myfonts";
+}
+
+span {
+  font-family: "myfonts";
+
+}
+
+/* preloader starts */
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  left: 0;
+  top: 0;
+  z-index: 10000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+
+.preloader.deactive {
+  opacity: 0;
+  z-index: -1;
+}
+
+.preloader .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #00A499;
+}
+
+.preloader .scircle {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  background-color: white;
+  animation: preloader 1s infinite;
+}
+
+@keyframes preloader {
+  0% {
+    transform: translate(0, -9px);
+  }
+
+  25% {
+    transform: translate(9px, 0);
+  }
+
+  50% {
+    transform: translate(0px, 9px);
+  }
+
+  75% {
+    transform: translate(-9px, 0);
+  }
+
+  100% {
+    transform: translate(0, -9px);
+  }
+}
+
+/* preloader ends */
+
+h1 {
+  font-family: "myfonts";
+}
+
+p {
+  font-family: "myfonts";
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/* nav start */
+.bg-light {
+  background-color: #f0f0f0 !important;
+}
+
+.bgnav {
+  background-color: white;
+  border: 3px solid #00A499;
+
+}
+
+body {
+  position: relative;
+  /* z-index: 1; */
+}
+
+nav {
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed !important;
+}
+
+.as {
+  color: white;
+  text-decoration: none;
+  font-family: "myfonts";
+  font-size: 19px;
+}
+
+.as:hover {
+  color: white;
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  font-family: "myfonts";
+  padding: 25px 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.dropdown-item {
+  font-family: "myfonts";
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: black;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav {
+    border-top: 1px solid #EEEEEE;
+  }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+  height: 75px;
+}
+
+.navlink:hover {
+  color: #00A499 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+  top: -100px;
+  transition: .5s;
+}
+
+/* .btn {
+  background-color: #00A499 !important;
+  color: white !important;
+  border: 1px solid #00A499 !important;
+  border-radius: 29px !important;
+  font-family: "myfonts";
+} */
+
+
+
+.btn:hover {
+  border: 1px solid #00A499 !important;
+  background-color: black !important;
+}
+
+.form-control {
+  border-radius: 29px !important;
+}
+
+.form-control::placeholder {
+  font-family: myfonts;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+  }
+}
+
+/* nav end */
+/* slider start */
+
+.myslider {
+  margin-top: 75px;
+}
+
+.carousel-item {
+  height: 540px;
+  background: no-repeat scroll center scroll;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  margin-bottom: 140px !important;
+  animation: bounceInUp 2s normal;
+
+
+}
+
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  /* font-family: "myfonts"; */
+  /* font-size: 50px !important; */
+  /* color: yellow; */
+}
+
+.span3 {
+  color: red;
+}
+
+.button2 {
+  height: 50px;
+  width: 120px;
+  font-family: "myfonts";
+  background-color: #00A499;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2:hover {
+  background-color: black;
+}
+
+.a1 {
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+}
+
+.a1:hover {
+  color: white;
+  border: 1px solid black;
+}
+
+.p1 {
+  color: white;
+  font-size: 30px;
+  font-family: "myfonts";
+
+}
+
+.click1 {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.click1:hover {
+  background-color: #00A499;
+  border: 1px solid #00A499;
+}
+
+/* slider end */
+/* filter start */
+.product-card {
+  border: 1px solid #00A499;
+  width: 280px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0px 0px 15px rgba(203, 203, 203, 0.804);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+
+}
+
+.my-h11 {
+  font-size: 30px;
+}
+
+.pcard-img {
+  width: 100%;
+  height: 150px;
+}
+
+.mydis {
+  color: rgb(146, 135, 135);
+  font-family: "myfonts";
+}
+
+.a10 {
+  text-decoration: none;
+  color: #00A499;
+  border: 1px solid #00A499;
+  border-radius: 15px;
+  margin-top: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a10:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.myprice {
+  font-size: 27px;
+  color: #00A499;
+}
+
+.button3 {
+  height: 40px;
+  width: 100px;
+  font-family: myfonts;
+  background-color: #00A499;
+  border: none;
+  margin-right: 28%;
+  cursor: pointer;
+  border-radius: 40px;
+  margin-left: 26%;
+}
+
+.button3:hover {
+  background-color: black;
+}
+
+.a3 {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+}
+
+.a3:hover {
+  color: white;
+  border: 1px solid black;
+}
+
+.fs-2 {
+  color: black;
+  margin-bottom: -10%;
+}
+
+/* filter end */
+/* feedback start */
+.clients {
+  color: black;
+  margin-top: 30px;
+  font-family: "myfonts";
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin-left: 25px !important;
+  margin-top: 30px !important;
+  font-family: "myfonts";
+}
+
+.wrapper {
+  overflow-x: hidden;
+  background-color: #ffffff;
+  /* position: absolute; */
+  width: 75%;
+  margin-top: 20px;
+  min-height: 25em;
+  border-radius: 0.6em;
+  /* transform: translate(-50%, -50%); */
+  /* left: 50%;
+  top: 50%; */
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13%;
+}
+
+.testimonial-container {
+  width: 85%;
+  height: 100%;
+  /* position: relative; */
+  margin: auto;
+  padding: 1.8em 1.2em;
+}
+
+.wrapper button {
+  font-size: 1.8em;
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #ffffff;
+  /* position: absolute; */
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: none;
+  color: #00A499;
+  box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.wrapper button:hover {
+  background-color: #00A499;
+  color: white;
+}
+
+button#next {
+  right: -1.1em;
+}
+
+button#prev {
+  left: -1.1em;
+}
+
+.testimonial-container p {
+  color: rgb(146, 135, 135);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  font-family: "myfonts";
+}
+
+.testimonial-container img {
+  display: block;
+  margin: 1.8em auto 1.25em auto;
+  border-radius: 50%;
+  height: 70px;
+  width: 100px;
+  width: 4.4em;
+}
+
+.testimonial-container h3 {
+  color: #2d3d67;
+  font-size: 1em;
+  text-align: center;
+}
+
+.testimonial-container h6 {
+  color: #bcc4da;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+/* feedback end */
+/* <!-- About start --> */
+.myabout {
+  display: flex;
+  justify-content: center;
+}
+
+.about-sec {
+  background-color: #00A499;
+  color: white;
+  margin: 0 20px 0 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.about-sec .about-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button4 {
+  height: 50px;
+  width: 140px;
+  font-family: "myfonts";
+  background-color: #00A499;
+  border: none;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 40px;
+}
+
+.button4:hover {
+  background-color: black;
+  border: 1px solid #00A499;
+}
+
+.a4 {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+}
+
+.a4:hover {
+  color: white;
+  border: 1px solid black;
+}
+
+/* <!-- About end --> */
+/* <!-- Question start --> */
+.q1 {
+  /* margin-top: 30px; */
+  /* margin-left: 40px; */
+  /* display: flex; */
+}
+
+.q2 {
+  color: black;
+}
+
+.q3 {
+  color: #00A499;
+}
+
+.q4 {
+  color: rgb(146, 135, 135);
+  font-size: 20px;
+}
+
+.button5 {
+  height: 50px;
+  width: 120px;
+  font-family: "myfonts";
+  background-color: #00A499;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #00A499;
+  border-radius: 40px;
+}
+
+.button5:hover {
+  background-color: black;
+  border: 1px solid #00A499;
+}
+
+.a5 {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+}
+
+.a5:hover {
+  color: white;
+}
+
+/* <!-- Question end --> */
+/* footer start */
+.my-footer {
+  background-color: #00A499;
+}
+
+.mybtn {
+  background-color: #00A499 !important;
+  border: 1px solid #00A499 !important;
+  border-radius: 23px !important;
+}
+
+/* footer end */
